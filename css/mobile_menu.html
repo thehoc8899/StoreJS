@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            background-color: #59257A;
+        }
+
+        #menu ul ul {
+            padding-left: 30px;
+            display: none;
+        }
+
+        #menu ul li:hover>ul {
+            display: block;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            border-right: 1px dotted #eed3d3;
+        }
+
+        #menu a:hover {
+            color: yellow;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="menu">
+        <button><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="#">Trang chu</a></li>
+            <li><a href="#">Gioi thieu</a></li>
+            <li><a href="#">San pham</a>
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Dien thoai</a>
+                        <ul>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Iphone</a></li>
+                            <li><a href="#">Xiaomi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">May tinh bang</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Huong dan</a></li>
+            <li><a href="#">Lien he</a>
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Dien thoai</a></li>
+                    <li><a href="#">May tinh bang test test</a>
+                        <ul>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Iphone</a></li>
+                            <li><a href="#">Xiaomi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

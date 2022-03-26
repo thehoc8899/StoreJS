@@ -1,0 +1,228 @@
+/* Reset all tag */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    font-style: italic;
+    font-weight: bold;
+    src: url(../css/fonts/Sofia.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Layout */
+
+#container {
+    /* max-width: 100%;
+    margin: auto; */
+}
+
+#header {
+    font-family: MyFont;
+    font-size: 2em;
+    background-color: #F2A500;
+    height: 100px;
+    text-align: center;
+}
+
+#menu {
+    background-color: #59257A;
+    color: white;
+    height: 40px;
+    position: sticky;
+    top: 0;
+}
+
+#menu button {
+    font-size: 30px;
+}
+
+#left {
+    background-color: green;
+    min-height: 400px;
+}
+
+#right {
+    background-color: green;
+    min-height: 400px;
+}
+
+#main {
+    background-color: #CCCCCC;
+    min-height: 400px;
+}
+
+#footer {
+    background-color: darkblue;
+    color: white;
+    height: 80px;
+    clear: both;
+}
+
+/* Menu */
+
+#menu ul {
+    list-style-type: none;
+}
+
+/* For desktop */
+
+@media only screen and (min-width:768px) {
+    #menu li:last-child a {
+        border: none;
+    }
+    /* Multi-level menu */
+    #menu ul ul li {
+        float: none;
+        width: 100%;
+    }
+    #menu ul ul {
+        /* position: absolute; */
+        left: 0;
+        top: 100%;
+        background-color: #59257a;
+        display: none;
+    }
+    #menu ul li {
+        position: relative;
+    }
+    #menu ul ul a {
+        font-size: 16px;
+        white-space: nowrap;
+        padding: 5px 20px;
+        text-align: left;
+        border-right: none;
+    }
+    #menu ul li:hover>ul {
+        display: block;
+    }
+    #menu ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+}
+
+/* Main */
+
+#main a {
+    color: blue;
+    text-decoration: none;
+}
+
+#main a:hover {
+    color: red;
+}
+
+#main {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+img.thumbnai {
+    max-width: 150px;
+    float: left;
+    margin: 10px;
+    border: 5px green solid;
+}
+
+a:hover img.thumbnai {
+    border-color: red;
+    border-radius: 10px;
+}
+
+/* Product */
+
+/* .main
+{
+
+} */
+
+.product {
+    border: 1px solid blue;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: brown;
+    white-space: nowrap;
+    margin: 2px;
+}
+
+.product img {
+    height: 100px;
+    max-width: 100%;
+}
+
+.product div {
+    color: blue;
+    font-weight: bold;
+}
+
+.product button {
+    padding: 2px 10px;
+    margin: 3px;
+}
+
+.product span {
+    width: 30px;
+    position: relative;
+    background-color: red;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    line-height: 28px;
+    font-size: 16px;
+    left: -20px;
+}
+
+.product span::after {
+    content: "";
+    display: block;
+    border-width: 14px;
+    border-style: solid;
+    border-color: transparent transparent transparent red;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+#sort-by{
+    width:100%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#filter{
+    width:100%;
+    padding: 5px;
+}
+table.cart{
+    width: 100%;
+    margin: auto;
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+table.cart td , table.cart th{
+    border: 1px solid ;
+    text-align: center;
+}
+table.cart input{
+    width: 60px;
+    padding: 5px;
+}
+

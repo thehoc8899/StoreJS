@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/font-awesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome/css/brands.css" rel="stylesheet">
+    <link href="css/font-awesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">header <i class="fas fa-camera"></i><i class="fas fa-adjust"></i></div>
+        <div id="menu">
+            <button><i class="fas fa-bars"></i></button>
+            <ul>
+                <li><a href="#">Trang chu</a></li>
+                <li><a href="#">Gioi thieu</a></li>
+                <li><a href="#">San pham</a></li>
+                <li><a href="#">Huong dan</a></li>
+                <li><a href="#">Lien he</a></li>
+                <li><a href="cart.html">Giỏ hàng [<span id = "count">0</span>]</a></li>
+            </ul>
+        </div>
+        <div id="left" class="col-s-3 col-2">
+            <select id="sort-by">
+                <option value="0">Sắp xếp</option>
+                <option value="1">Tên tăng dần</option>
+                <option value="2">Tên giảm dần</option>
+                <option value="3">Giá tăng dần</option>
+                <option value="4">Giá giảm dần</option>
+            </select>
+            
+
+            <select id="filter">
+                <option value="0">Khoảng tiền</option>
+                <option value="1">Dưới 100$</option>
+                <option value="2">Từ 100$ -> 300$</option>
+                <option value="3">Từ 300$ -> 900$ </option>
+                <option value="4">Trên 900$ </option>
+            </select>
+        </div>
+        <div id="main" class="col-s-9 col-8">    
+        </div>
+        <div id="right" class="col-s-12 col-2">right</div>
+        <div id="footer">footer</div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        Data();
+        
+    </script>
+</body>
+
+</html>
